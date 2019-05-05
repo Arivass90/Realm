@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper0"
+    >
+
+
+    <EditText
+        android:id="@+id/txtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="ID"/>
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduzca nombre"/>
+
+    <EditText
+        android:id="@+id/txtAge"
+        android:layout_width="match_parent"
+        android:hint="Introduzca edad"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/txtGender"
+        android:layout_width="match_parent"
+        android:hint="Introduzca genero"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:text="AÑADIR"
+            android:layout_marginLeft="3dp"/>
+
+        <Button
+            android:id="@+id/btnView"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnModify"
+            android:text="LISTAR" />
+
+
+        <Button
+            android:id="@+id/btnDelete"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="false"
+            android:layout_toRightOf="@+id/btnView"
+            android:text="BORRAR" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="86dp"
+            android:layout_height="50dp"
+            android:text="BUSCAR"
+            android:layout_alignParentLeft="false"
+            android:layout_toRightOf="@+id/btnDelete" />
+
+        <Button
+            android:id="@+id/btnModify"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnAdd"
+            android:text="EDITAR" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtView"
+            android:background="@drawable/wallpaper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </ScrollView>
+
+</LinearLayout>
